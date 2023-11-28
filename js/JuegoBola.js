@@ -13,7 +13,7 @@ var bolax2 = 50;
 var bolay2 = 90;
 
 const bolaBal = new Image();
-bolaBal.src = "imagenes/bolaBaloncesto.png";
+bolaBal.src = "../img/bolaBaloncesto.png";
 
 bolaBal.onload = () => {
     setInterval(update, (1 / 60) * 1000);

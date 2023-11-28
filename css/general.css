@@ -1,0 +1,23 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: videojuego;
+    src: url(../fonts/ka1.ttf);
+}
+
+header>h1 {
+
+    font-family: videojuego;
+    text-align: center;
+
+}
+
+header {
+
+    background-color: red;
+}

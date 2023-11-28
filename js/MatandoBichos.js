@@ -19,7 +19,7 @@ const vox = {
     imagen: new Image(),
     sinClick: true
 };
-vox.imagen.src = "imagenes/ignacio.png";
+vox.imagen.src = "../img/ignacio.png";
 vox.imagen.onload = () => {
 
     vox.ancho = vox.imagen.width / 5;
