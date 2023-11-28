@@ -2,6 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+
+}
+
+body {
+
+    background-image: url(../img/fondo.gif);
 
 }
 
@@ -10,14 +17,48 @@
     src: url(../fonts/ka1.ttf);
 }
 
+@font-face {
+    font-family: videojuego2;
+    src: url(../fonts/8bitOperatorPlus8-Regular.ttf);
+}
+
 header>h1 {
 
     font-family: videojuego;
+    font-size: 3em;
     text-align: center;
 
 }
 
+header>nav>ul {
+    font-family: videojuego2;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header>nav a {
+
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header a:hover {
+
+    text-decoration: none;
+    color: black;
+    scale: scale(5);
+}
+
 header {
 
-    background-color: red;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em;
+    border: 6px solid;
 }
