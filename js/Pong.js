@@ -49,7 +49,7 @@ document.addEventListener('keydown', (e) => {
 
 const tamanhoImagen = 24;
 const bolaBal = new Image();
-bolaBal.src = "imagenes/bolaBaloncesto.png";
+bolaBal.src = "../img/bolaBaloncesto.png";
 var intervalo;
 bolaBal.onload = () => {
     intervalo = setInterval(update, (1 / 60) * 1000);

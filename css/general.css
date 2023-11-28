@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
+    transition: ease;
+    transition-duration: 100ms;
 
 }
 
 body {
 
     background-image: url(../img/fondo.gif);
-
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 @font-face {
@@ -46,11 +49,12 @@ header>nav a {
 
 
 
-header a:hover {
+header li:hover {
+    transform: scale(1.1);
+}
 
-    text-decoration: none;
-    color: black;
-    scale: scale(5);
+header li:hover a {
+    color: rgb(46, 19, 163);
 }
 
 header {
@@ -62,3 +66,5 @@ header {
     padding: 1.5em;
     border: 6px solid;
 }
+
+footer {}
