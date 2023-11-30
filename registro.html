@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/registro.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Web de Juegos</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            <div class="inputs">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+            </div>
+            <button type="submit" class="boton">Registrarse</button>
+
+        </form>
+
+    </main>
+
+
+    <script>
+        const formulario = document.forms[0];
+
+        formulario[3].addEventListener("click", (e) => {
+
+            e.preventDefault();
+
+            console.log(formulario[0].value);
+
+            console.log(formulario[1].value);
+
+            console.log(formulario[2].value);
+
+        })
+
+    </script>
+</body>
+
+</html>

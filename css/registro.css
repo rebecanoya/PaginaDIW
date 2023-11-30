@@ -1,0 +1,41 @@
+form {
+
+    background-color: var(--main);
+    ;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 2em;
+    border: 5px solid black;
+    align-items: center;
+
+
+}
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+
+}
+
+.boton {
+
+    width: 25%;
+
+}
+
+.boton:hover {
+
+    transform: scale(1.1);
+    cursor: pointer;
+}
