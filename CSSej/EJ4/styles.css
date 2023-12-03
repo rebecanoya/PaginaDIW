@@ -1,0 +1,51 @@
+body {
+
+    background-color: #E1E5EF;
+    font-style: verdana, arial, helvetica, sans-serif;
+
+}
+
+.menu {
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 3em;
+    margin-left: 2em;
+
+}
+
+a:nth-child(odd) {
+
+    background-color: white;
+
+}
+
+a {
+    color: black;
+    font-size: large;
+    padding: 1em;
+}
+
+.contenido {
+
+    background-color: white;
+    margin: 1em;
+
+}
+
+p:first-child {
+
+    font-size: larger;
+    font-style: italic;
+
+
+}
+
+p::first-letter {
+
+    font-size: x-large;
+    font-weight: bold;
+    color: red;
+
+}

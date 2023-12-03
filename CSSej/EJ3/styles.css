@@ -1,0 +1,119 @@
+body {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+.sidebar {
+    background: #deb887;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.balon {
+    position: fixed;
+
+    width: 375px;
+    bottom: 5px;
+    right: 5px;
+
+
+}
+
+.mainImg {
+    background: linear-gradient(to bottom right, #fff, #deb887);
+    width: 70%;
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subForm {
+
+    padding: 0.25em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.subForm {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5em;
+    font-size: 16px;
+    background-color: #af604c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a9503a;
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .mainImg {
+        width: 0%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .sidebar {
+        width: 60%;
+    }
+
+    .mainImg {
+        width: 40%;
+    }
+
+    .form {
+        width: 70%;
+        font-size: 25px;
+
+    }
+
+}
