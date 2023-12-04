@@ -59,6 +59,9 @@
 
             console.log(formulario[2].value);
 
+            const ventanaEmergente = window.open("", "_blank");
+            const bodyVentanaEmergente = ventanaEmergente.document.body;
+            bodyVentanaEmergente.innerHTML = `Nombre: ${formulario[0].value} <br> Correo: ${formulario[1].value} <br> Contraseña: ${formulario[2].value}`;
         })
 
     </script>
