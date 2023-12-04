@@ -1,4 +1,4 @@
-.container {
+main {
 
     background-color: rgb(228, 227, 227);
     width: 100%;
@@ -9,27 +9,15 @@
 
 }
 
-.insideContainer {
+.Container {
 
     background-color: white;
     display: flex;
-    width: 30%;
-    height: 30%;
+    padding: 2em;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     border: 2px solid black;
-
-
-
-}
-
-.formulario {
-
-    width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
 
 }
 
@@ -43,6 +31,8 @@ input {
 
 .subForm {
 
+    display: flex;
+    flex-direction: column;
     padding: 5px;
 
 }
@@ -61,6 +51,14 @@ button {
 button:hover {
 
     transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+input:focus {
+
+    background-color: aquamarine;
+
 
 }
 
@@ -70,6 +68,6 @@ button:hover {
     justify-content: center;
     padding-top: 1em;
 
-    height: 15%;
+    height: 20%;
 
 }
