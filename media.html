@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
     <title>Canvas y CSS</title>
 </head>
 
 <body>
     <header>
         <h1>Web de Juegos</h1>
-
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -24,8 +25,20 @@
         </nav>
     </header>
 
-    <main></main>
-
+    <main>
+        <div class="owl-carousel">
+            <div class="item"><img class="demo" src="./img/imCircunferencia.png"></div>
+            <div class="item"><img class="demo" src="./img/imColorines.png"></div>
+            <div class="item"><img class="demo" src="./img/imFaro.png"></div>
+            <div class="item"><img class="demo" src="./img/imJuegoBola.png"></div>
+            <div class="item"><img class="demo" src="./img/imMatandoBichos.png"></div>
+            <div class="item"><img class="demo" src="./img/imMolinillo.png"></div>
+            <div class="item"><img class="demo" src="./img/imPong.png"></div>
+            <div class="item"><img class="demo" src="./img/imSemaforo.png"></div>
+            <div class="item"><img class="demo" src="./img/imStickman.png"></div>
+            <div class="item"><img class="demo" src="./img/imTanque.png"></div>
+        </div>
+    </main>
 
     <footer>
         <ul>
@@ -34,7 +47,9 @@
             <li>Política de privacidad</li>
         </ul>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/mainCarousel.js"></script>
 </body>
 
 </html>
