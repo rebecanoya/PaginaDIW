@@ -1,0 +1,27 @@
+body {
+
+    background-color: rgb(42, 41, 41);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+h1 {
+    font-size: 8em;
+    -webkit-text-stroke: 2px rgb(141, 141, 141);
+    text-overflow: ellipsis;
+    background-image: linear-gradient(to bottom right, #ff0000, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1:hover {
+
+    transform: scale(1.1);
+
+}

@@ -2,13 +2,14 @@ body {
 
     background-color: aliceblue;
 
+    height: 100vh;
 }
 
 
-.container {
+main {
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,34 +20,51 @@ body {
 .tarjetas {
 
     display: flex;
-    height: 30%;
-
+    gap: 2em;
+    height: 50%;
 
 
 }
 
-.tarjeta1 {
+.tarjeta {
     border: none;
-    padding: 1.5em;
-    margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 1em;
     background: linear-gradient(to bottom right, #00a2ff, #cc00ff);
     color: white;
-}
-
-.tarjeta2 {
-    border: none;
-    padding: 1.5em;
-    margin-left: 10px;
-    border-radius: 5px;
-    background: linear-gradient(to bottom right, #00a2ff, #cc00ff);
-    color: white;
+    box-shadow: 0.25em 0.25em 0.25em black;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 1fr 2em;
 
 }
 
 .footerTarjeta {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+
+}
+
+.contenido {
+
+    margin: 1.5em;
+
+}
+
+.footerTarjeta>p {
+
+    color: black;
 
 
+
+}
+
+.footerTarjeta>a {
+
+    color: white;
+    text-decoration: none;
 
 }
