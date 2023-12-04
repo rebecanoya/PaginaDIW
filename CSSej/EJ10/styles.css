@@ -1,0 +1,45 @@
+body {
+
+    background-color: aliceblue;
+
+}
+
+
+.container {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.tarjetas {
+
+    display: flex;
+    height: 30%;
+
+
+
+}
+
+.tarjeta1 {
+    border: none;
+    padding: 1.5em;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #00a2ff, #cc00ff);
+    color: white;
+}
+
+.tarjeta2 {
+    border: none;
+    padding: 1.5em;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #00a2ff, #cc00ff);
+    color: white;
+
+}
