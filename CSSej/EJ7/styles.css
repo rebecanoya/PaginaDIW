@@ -1,0 +1,36 @@
+.container {
+
+    background-color: rgb(228, 227, 227);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.insideContainer {
+
+    background-color: white;
+    display: flex;
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.formulario {
+
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.subForm {
+
+    padding: 5px;
+
+}
+
+button {}
