@@ -12,4 +12,8 @@ $(document).ready(function () {
             }
         }
     });
+
+    document.getElementsByClassName("owl-nav")[0].classList.remove("disabled");
+
+
 });

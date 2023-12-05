@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/lightbox.css">
     <title>Canvas y CSS</title>
 </head>
 
@@ -21,112 +20,15 @@
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="media.html">Media</a></li>
                 <li><a href="registro.html">Registro</a></li>
+                <li><a href="examen.html">Examen</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- <div class="lightbox">
-            <div class="row">
-                <div class="column">
-                    <img src="./img/imCircunferencia.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imColorines.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imFaro.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imJuegoBola.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imMatandoBichos.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imMolinillo.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imPong.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imSemaforo.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imStickman.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
-                </div>
-                <div class="column">
-                    <img src="./img/imTanque.png" onclick="openModal();currentSlide(10)" class="hover-shadow">
-                </div>
-            </div> -->
 
 
-        <!-- <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 10</div>
-                        <img src="./img/imCircunferencia.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 10</div>
-                        <img src="./img/imColorines.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 10</div>
-                        <img src="./img/imFaro.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 10</div>
-                        <img src="./img/imJuegoBola.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 10</div>
-                        <img src="./img/imMatandoBichos.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">6 / 10</div>
-                        <img src="./img/imMolinillo.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">7 / 10</div>
-                        <img src="./img/imPong.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">8 / 10</div>
-                        <img src="./img/imSemaforo.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">9 / 10</div>
-                        <img src="./img/imStickman.png" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">10 / 10</div>
-                        <img src="./img/imTanque.png" style="width:100%">
-                    </div>
-
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <div class="caption-container">
-                        <p id="caption"></p>
-                    </div>
-
-
-                </div>
-            </div> -->
-        </div>
 
 
     </main>
@@ -138,49 +40,6 @@
             <li>Política de privacidad</li>
         </ul>
     </footer>
-
-    <!-- <script>
-        // Open the Modal
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        // Close the Modal
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script> -->
 
 </body>
 
