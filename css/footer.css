@@ -1,0 +1,15 @@
+main {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    padding: 2em;
+    background-color: var(--main);
+    margin: 10%;
+    font-family: videojuego2;
+
+}

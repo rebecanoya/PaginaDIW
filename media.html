@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
     <title>Canvas y CSS</title>
@@ -21,11 +21,18 @@
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="media.html">Media</a></li>
                 <li><a href="registro.html">Registro</a></li>
+                <li><a href="examen.html">Examen</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <div class="posicionTextoCarrusel">
+
+            <h2>Arrastra para ver todas las fotos</h2>
+
+        </div>
         <div class="owl-carousel">
             <div class="item"><img class="demo" src="./img/imCircunferencia.png"></div>
             <div class="item"><img class="demo" src="./img/imColorines.png"></div>
@@ -38,18 +45,85 @@
             <div class="item"><img class="demo" src="./img/imStickman.png"></div>
             <div class="item"><img class="demo" src="./img/imTanque.png"></div>
         </div>
+
+        <div class="videos">
+
+            <div><video controls>
+                    <source src="./videos/video1.mp4">
+                </video></div>
+
+            <div><video controls>
+                    <source src="./videos/video2.mp4">
+                </video></div>
+
+
+        </div>
+
     </main>
+
+
 
     <footer>
         <ul>
-            <li>Contacto</li>
-            <li>Acerca de nosotros</li>
-            <li>Política de privacidad</li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="politica.html">Política de privacidad</a></li>
+
         </ul>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
     <script src="js/mainCarousel.js"></script>
+    <script>
+
+
+        const videos = document.getElementsByTagName("video");
+
+        for (const video of videos) {
+
+            const parent = video.parentNode;
+            let cont = document.createElement("div");
+
+            let play = document.createElement("button");
+            play.innerHTML = "Play";
+            play.addEventListener("click", () => {
+                video.play()
+            })
+            cont.appendChild(play);
+
+            let stop = document.createElement("button");
+            stop.innerHTML = "Stop";
+            stop.addEventListener("click", () => {
+                video.pause()
+            })
+            cont.appendChild(stop);
+
+            let fullscreen = document.createElement("button");
+            fullscreen.innerHTML = "Fullscreen";
+            fullscreen.addEventListener("click", () => {
+                video.requestFullscreen()
+            })
+            cont.appendChild(fullscreen);
+
+            let volume = document.createElement("input");
+            volume.type = "range";
+            volume.min = "0";
+            volume.max = "100"
+            volume.value = "0.5"
+            volume.addEventListener("change", () => {
+                video.volume = volume.value / 100;
+            })
+            cont.appendChild(volume);
+
+            parent.appendChild(cont);
+
+        }
+
+
+
+
+    </script>
 </body>
 
 </html>

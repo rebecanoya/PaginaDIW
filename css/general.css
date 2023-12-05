@@ -99,3 +99,14 @@ footer>ul {
 main {
     overflow-x: hidden;
 }
+
+footer a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+footer li:hover a {
+    color: rgb(46, 19, 163);
+}
