@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 500;
-canvas.height = 500;
+canvas.width = 400;
+canvas.height = 400;
 const ctx = canvas.getContext("2d");
 const tamanhoImagen = 80;
 var bolax1 = 270;

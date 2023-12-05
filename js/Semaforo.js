@@ -134,6 +134,7 @@ function cambiarEstado() {
     }
 };
 
+const main = document.getElementsByClassName("texto")[0];
 var boton = document.createElement("input");
 boton.type = "button";
 boton.value = "Precaución";
@@ -152,7 +153,7 @@ boton.addEventListener("click", () => {
     dibujar();
 
 });
-document.body.appendChild(boton);
+main.appendChild(boton);
 boton.style.width = "150px";
 boton.style.height = "50px";
 dibujar();

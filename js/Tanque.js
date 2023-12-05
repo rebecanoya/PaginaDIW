@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 1200;
-canvas.height = 800;
+canvas.width = 600;
+canvas.height = 400;
 const ctx = canvas.getContext("2d");
 
 class Bala {

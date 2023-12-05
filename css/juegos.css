@@ -1,0 +1,41 @@
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.contenedor {
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    justify-items: center;
+
+}
+
+.texto {
+
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+
+}
+
+canvas {
+
+    background-color: white;
+}
+
+p {
+
+
+    text-align: center;
+}

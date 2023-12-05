@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 800;
-canvas.height = 600;
+canvas.width = 400;
+canvas.height = 400;
 const ctx = canvas.getContext("2d");
 const bola = {
     x: canvas.width / 2,
@@ -8,7 +8,7 @@ const bola = {
     vlx: -5,
     vly: -5
 };
-const alturaRaqueta = 550;
+const alturaRaqueta = 350;
 const aceleracion = 1.001;
 var contador = 0;
 function dibujarRecta(a, b, colorRelleno = "white", anchoBorde = 2, colorBorde = "black") {

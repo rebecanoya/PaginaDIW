@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 800;
-canvas.height = 800;
+canvas.width = 400;
+canvas.height = 400;
 const ctx = canvas.getContext("2d");
 const diferencia = 120;
 var tiempo = 0;

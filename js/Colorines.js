@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 800;
-canvas.height = 600;
+canvas.width = 400;
+canvas.height = 400;
 const ctx = canvas.getContext("2d");
 
 function dibujarCuadradoRedondo(pos, ancho, alto, radio, colorRelleno = "white", anchoBorde = 0, colorBorde = "black") {
@@ -52,6 +52,7 @@ function update() {
 
 }
 
+const main = document.getElementsByClassName("texto")[0];
 var boton1 = document.createElement("input");
 boton1.type = "button";
 boton1.value = "Cesar";
@@ -60,7 +61,7 @@ boton1.addEventListener("click", () => {
     clearInterval(intervalo);
 
 });
-document.body.appendChild(boton1);
+main.appendChild(boton1);
 boton1.style.width = "150px";
 boton1.style.height = "50px";
 
@@ -72,7 +73,7 @@ boton2.addEventListener("click", () => {
     intervalo = setInterval(update, slider.value * 1000);
 
 });
-document.body.appendChild(boton2);
+main.appendChild(boton2);
 boton2.style.width = "150px";
 boton2.style.height = "50px";
 
@@ -89,7 +90,7 @@ slider.addEventListener("change", () => {
 
 });
 
-document.body.appendChild(slider);
+main.appendChild(slider);
 
 update();
 intervalo = setInterval(update, slider.value * 1000);

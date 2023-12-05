@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 800;
-canvas.height = 600;
+canvas.width = 400;
+canvas.height = 400;
 const ctx = canvas.getContext("2d");
 
 const intervalo = 1;
@@ -53,14 +53,18 @@ setTimeout(() => {
 
 }, tiempoPartida * 1000);
 
-document.addEventListener("click", (e) => {
-    var x = e.clientX;
-    var y = e.clientY;
+canvas.addEventListener("click", (e) => {
+
+    const { left, top } = canvas.getBoundingClientRect();
+    var x = e.clientX - left;
+    var y = e.clientY - top;
 
     if (vox.x <= x && vox.x + vox.ancho >= x && vox.y <= y && vox.y + vox.alto >= y && vox.sinClick) {
 
         contadorPuntos++;
         vox.sinClick = false;
     }
+
+
 
 });

@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
-canvas.width = 800;
-canvas.height = 800;
+canvas.width = 600;
+canvas.height = 600;
 const ctx = canvas.getContext("2d");
 
 function dibujarMolinillo(a, b, c, d, colorRelleno = "white", anchoBorde = 0, colorBorde = "black") {
