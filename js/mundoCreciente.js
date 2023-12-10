@@ -1,5 +1,5 @@
-var canvasWidth = "900";
-var canvasHeight = "450";
+var canvasWidth = "1800";
+var canvasHeight = "900";
 
 var canvas = document.getElementById('canvas');
 canvas.width = canvasWidth;
@@ -7,16 +7,17 @@ canvas.height = canvasHeight;
 var ctx = canvas.getContext('2d');
 
 var planetImg = new Image();
-planetImg.src = "../img/mundo.png";
+planetImg.src = "./img/mundo.png";
 
 step = 0;
+var planets;
 
 planetImg.onload = () => {
 
+  planets = Array(new Planet(0, 0, 0.002, 0.005, planetImg));
   setInterval(update, 16);
 
 };
-var planets = Array(new Planet(0, 0, 0.002, 0.005, planetImg));
 
 function update() {
   drawPlanet();

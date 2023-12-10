@@ -29,6 +29,7 @@ function dibujarCuadrado(a, b, c, d, colorRelleno = "white", anchoBorde = 0, col
     ctx.lineTo(b.x, b.y);
     ctx.lineTo(c.x, c.y);
     ctx.lineTo(d.x, d.y);
+    ctx.lineTo(a.x, a.y);
     ctx.fill();
     if (anchoBorde > 0) { ctx.stroke(); }
 
