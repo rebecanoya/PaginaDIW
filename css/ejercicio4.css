@@ -1,0 +1,25 @@
+.p1 {
+
+    font-weight: bold;
+
+}
+
+.p2 {
+
+    color: white;
+
+    -webkit-text-stroke: 0.75px rgb(255, 0, 0);
+
+
+
+}
+
+.p3 {
+
+    text-shadow: violet 1px 1px, blue 1px 1.25px, green 1px -0.25px;
+
+
+
+}
+
+.p4 {}
